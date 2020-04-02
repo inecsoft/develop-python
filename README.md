@@ -11,14 +11,14 @@
 
    ``` bash
     $ python3 -m venv venv
-    $ . ./venv/bin/activate
+    $ ./venv/bin/activate
    ```
     
   * __Windows env__
   
    ``` bash
     $ python3 -m venv venv
-    $ . .\venv\Scripts\activate
+    $ ..\venv\Scripts\activate
    ```
 ##### __Note:__
 (venv) $ which python
@@ -35,18 +35,41 @@ python -m pip install --upgrade pip
 ctl + shift + P and search for themes 
 
 * #### __To find the path to your python verion__
-import sys
-print(sys.executable)
+import sys  
+print(sys.executable)  
+
+***
+* #### __Start your project in Visual Studio Code__  
+code .
+
+  * _Create new terminal_  
+  * _Select the venv_  
+
+*  #### __Create a new django project__  
+django-admin startproject django_project  
+
+* #### __Create a new webapp__
+cd django_project    
+python manage.py startapp blog  
+
+* #### __Run the app__
+python manage.py runserver
+
+***
+* #### __First stpes__
+  - Copy urls.py from django_project to blog.  
+  - Create your fuction in wiews, like home and about.  
+  - Set the path to views on urls in blog folder
+  - Set the path to the new web app in urls in django_project folder.  
 
 ***
 
-*  #### __Create a new django project__  
-django-admin startproject website
-
-* #### __Create a new webapp__
-cd website  
-python manage.py startapp tutorial  
-
-python manage.py runserver
+* #### __Second steps__
+``` bash
+mkdir template  
+cd template  
+mkdir blog  
+touch home.html about.html base.html 
+```
 
 ***
