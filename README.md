@@ -7,11 +7,13 @@
 ### __Set up your pyhton enviroment__
 
   * __Linux env__
+
    ```
     $ python3 -m venv venv
     $ . ./venv/bin/activate
     ```
-
+  * __Windows env__
+  
     ```
     $ python3 -m venv venv
     $ . .\venv\Scripts\activate
