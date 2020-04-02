@@ -23,13 +23,20 @@
 ##### __Note:__
 (venv) $ which python
 
-* #### __Install Django__
-
+* #### __Install Django__  
 pip install django
 
-* #### __Update pip__
+* #### __Update pip__  
+python -m pip install --upgrade pip  
 
-python -m pip install --upgrade pip
+***  
+* #### __Customise visual Studio Code__
+
+ctl + shift + P and search for themes 
+
+* #### __To find the path to your python verion__
+import sys
+print(sys.executable)
 
 ***
 
