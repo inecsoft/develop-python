@@ -4,11 +4,13 @@
 </div>
 
 ***
+
 ### __Set up your pyhton enviroment__
 
   * __Linux env__
 
    ``` bash
+
     $ python3 -m venv venv
     $ . ./venv/bin/activate
 
@@ -16,8 +18,10 @@
   * __Windows env__
   
     ``` bash
+
     $ python3 -m venv venv
     $ . .\venv\Scripts\activate
+    
     ```
 ##### __Note:__
 (venv) $ which python
