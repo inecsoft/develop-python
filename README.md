@@ -10,20 +10,16 @@
   * __Linux env__
 
    ``` bash
-
     $ python3 -m venv venv
     $ . ./venv/bin/activate
-
-    ```
+   ```
     
   * __Windows env__
   
-    ``` bash
-
+   ``` bash
     $ python3 -m venv venv
     $ . .\venv\Scripts\activate
-
-    ```
+   ```
 ##### __Note:__
 (venv) $ which python
 
