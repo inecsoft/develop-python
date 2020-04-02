@@ -5,7 +5,7 @@
 
 ***
 
-### __Set up your pyhton enviroment__
+### __Set up your pyhton enviroment__  
 
   * __Linux env__
 
@@ -15,13 +15,14 @@
     $ . ./venv/bin/activate
 
     ```
+    
   * __Windows env__
   
     ``` bash
 
     $ python3 -m venv venv
     $ . .\venv\Scripts\activate
-    
+
     ```
 ##### __Note:__
 (venv) $ which python
@@ -35,6 +36,7 @@ pip install django
 python -m pip install --upgrade pip
 
 ***
+
 *  #### __Create a new django project__  
 django-admin startproject website
 
@@ -43,4 +45,5 @@ cd website
 python manage.py startapp tutorial  
 
 python manage.py runserver
+
 ***
