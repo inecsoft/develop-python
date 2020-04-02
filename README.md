@@ -38,12 +38,12 @@ ctl + shift + P and search for themes
 import sys  
 print(sys.executable)  
 
-***
+***  
 * #### __Start your project in Visual Studio Code__  
-code .
+code .  
 
-  * _Create new terminal_  
-  * _Select the venv_  
+    - _Create new terminal_  
+    - _Select the venv_  
 
 *  #### __Create a new django project__  
 django-admin startproject django_project  
@@ -61,7 +61,8 @@ python manage.py runserver
   - Create your fuction in wiews, like home and about.  
   - Set the path to views on urls in blog folder
   - Set the path to the new web app in urls in django_project folder.  
-
+  - Add this config in settings.py INSTALLED_APPS = [ 'blog.apps.BlogConfig',  
+  
 ***
 
 * #### __Second steps__
