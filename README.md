@@ -49,12 +49,14 @@ code .
 django-admin startproject django_project  
 
 * #### __Create a new webapp__
+```
 cd django_project    
 python manage.py startapp blog  
-
+```
 * #### __Run the app__
+```
 python manage.py runserver
-
+```
 ***
 * #### __First stpes__
   - Copy urls.py from django_project to blog.  
