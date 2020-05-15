@@ -76,3 +76,26 @@ touch home.html about.html base.html
 ```
 
 ***
+
+###  __migration of the app__
+
+```
+python manage.py makemigration
+python manage.py migrate
+python manage.py runserver
+```
+###  __Create supper user__
+```
+python manage.py createsuperuser
+```
+
+***
+### __Store the packages installed on requirements file__
+```
+pip freeze > ..\requirements.txt
+```
+###  __Install the packages for the project__  
+```
+pip install -r requirements.txt
+```
+***
