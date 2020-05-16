@@ -14,7 +14,8 @@ from .models import Post
 class TestView(APIView):
    def get(self, request, *args, **kwargs):
       qs = Post.objects.all()
-      serializer = PostSerializer(qs, many=True)
+      #serializer = PostSerializer(qs, many=True)
+      serializer  = PostSerializer(post)
       return Response(serializer.data)
 
    def post(self, request, *args, **kwargs):
