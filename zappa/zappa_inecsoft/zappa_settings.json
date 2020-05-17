@@ -6,9 +6,7 @@
         "project_name": "zappa-inecsoft",
         "runtime": "python3.6",
         "s3_bucket": "zappa-inecsoft-upload",
-        #"callbacks": {
-        #    "zip": "zappa_inecsoft.zip_callback"// After creating the package
-        #}
+       
     }
     
 }

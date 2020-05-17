@@ -50,4 +50,8 @@ zappa rollback production -n 3
 ```
 zappa status
 ```
+### __Remove the deployment__
+```
+zappa undeploy 
+```
 ***
