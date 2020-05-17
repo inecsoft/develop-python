@@ -25,12 +25,13 @@ SECRET_KEY = ')in9&60hcu5dm(xx8r=c+_!+dcu1&hu(dh7!sr+d2$#mw5z)4i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '127.0.0.1', 'localhost,endbeyykw6.execute-api.eu-west-1.amazonaws.com', ]
+ALLOWED_HOSTS = [ 'localhost', 'localhost,endbeyykw6.execute-api.eu-west-1.amazonaws.com', ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'django_zappa',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django_zappa.middleware.ZappaMidddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -118,3 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ZAPPA_SETTINGS = {
+
+    'dev' : {
+        's3_bucket' : 'zappa-inecsoft-static',
+        'settings_file': './zappa_inecsoft/zappa_inecsoft_settings.py' 
+    }
+}

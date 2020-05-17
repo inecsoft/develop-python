@@ -45,3 +45,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL  = '/media/'
 
 ***
+pip install Django-environ
+
+_Note:_
+edit settings with SECRET_KEY = env('SECRET_KEY')
+https://django-environ.readthedocs.io/en/latest/
+
+.env
+SECRET_KEY=SECRET_KEY
+***
