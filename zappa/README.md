@@ -40,5 +40,14 @@ zappa update
 ### __Debug your app__
 ```
 zappa tail
-``` 
+```
+
+### __Rollback to previous version__
+```
+zappa rollback production -n 3
+```
+### __If you need to see the status of your deployment and event schedules__  
+```
+zappa status
+```
 ***
