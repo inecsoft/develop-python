@@ -17,6 +17,7 @@ env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
 )
+
 # reading .env file
 environ.Env.read_env()
 
@@ -35,7 +36,7 @@ SECRET_KEY = env('SECRET_KEY')
 #SECRET_KEY = 'ywuzz2&c-hnx@52$iq42+w8@jxhg5b6q+wi8u_^#%=^o2@4_9g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
 
 ALLOWED_HOSTS = []
 
