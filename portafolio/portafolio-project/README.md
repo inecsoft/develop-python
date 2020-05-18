@@ -54,3 +54,36 @@ https://django-environ.readthedocs.io/en/latest/
 .env
 SECRET_KEY=SECRET_KEY
 ***
+
+***
+# __Database Posgres__
+
+docker run --name postgres -user "$(id -u):$(id -g)" -v ./data/web/database:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+docker exec -it postgres bash
+
+psql -l
+
+* __Create User__
+  createuser cent
+
+* __Show users and databases__
+  psql -c "select usename from pg_user;"
+
+* __Create new db own by cent user__
+  createdb dbname -O cent
+
+* __Conect to the database__
+  psql dbname
+
+* __Create table__
+create table test_table (no int, name test);
+
+* __Insert data in the table__
+insert into test_table (no,name) values (01,'CentOS');
+
+* __Exit database__
+  \q
+
+* __Delete db__
+  dropdb dbname
