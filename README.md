@@ -42,8 +42,8 @@ print(sys.executable)
 * #### __Start your project in Visual Studio Code__  
 code .  
 
-    - _Create new terminal_  
-    - _Select the venv_  
+    - Create new terminal  
+    - Select the venv    
 
 *  #### __Create a new django project__  
 django-admin startproject django_project  

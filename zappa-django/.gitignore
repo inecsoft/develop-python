@@ -1,0 +1,7 @@
+venv
+media
+.env
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/static
