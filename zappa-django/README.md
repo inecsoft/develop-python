@@ -6,8 +6,8 @@
 ```
 python -m venv venv
 venv/Script/activate
-pip install -r requirements.txt
-pip install -U zappa
+pip3 install -r requirements.txt
+pip3 install -U zappa
 
 ```
 
@@ -26,13 +26,16 @@ zappa init
 ```
 ### __Deploy your app to the cloud__
 ```
-zappa deploy 
+zappa deploy dev
 ```
 #### _NOTE:_ Add to the api url settings.py  
 ```
 ALLOWED_HOSTS = [ '127.0.0.1', 'x6kb437rh.execute-api.us-east-1.amazonaws.com', ]
 ```
-
+### __Add certificate__
+```
+zappa certify dev
+```
 ### __Rolling update on the App__
 ```
 zappa update

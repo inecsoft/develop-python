@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "venv-api\\Scripts\\python.exe"
+    "python.pythonPath": "venv-api\\Scripts\\python.exe",
+    "git.ignoreLimitWarning": true
 }
