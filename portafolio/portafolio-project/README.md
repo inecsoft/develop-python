@@ -57,12 +57,15 @@ SECRET_KEY=SECRET_KEY
 
 ***
 # __Database Posgres__
+docker run -itd --name postgres --rm -e POSTGRES_USER=postgres -e POSTGRES_DB=portafoliodb -e POSTGRES_PASSWORD=mysecretpassword postgres  
 
-docker run --name postgres -user "$(id -u):$(id -g)" -v ./data/web/database:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+docker exec -it postgres psql -U postgres  
 
-docker exec -it postgres bash
+docker run --name postgres -user "$(id -u):$(id -g)" -v ./data/web/database:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword -d postgres  
 
-psql -l
+docker exec -it postgres bash  
+
+psql -l  
 
 * __Create User__
   createuser cent
